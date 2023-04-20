@@ -60,6 +60,42 @@ p {
   padding: 30px 0;
 }
 
+.header__container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  align-items: center;
+  justify-self: start;
+  gap: 30px 10px;
+}
+
+.header__logo-link {
+  justify-self: start;
+}
+
 .header__logo {
   width: 200px;
+}
+
+.header__subtitle {
+  text-align: center;
+  justify-self: center;
+  font-size: 2rem;
+}
+
+.header__btn {
+  justify-self: end;
+  display: block;
+  text-align: center;
+  background-color: #f7df1e;
+  color: #000000;
+  width: 260px;
+  line-height: 20px;
+  max-width: 100%;
+  padding: 20px;
+  border-radius: 12px;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.header__btn:hover {
+  background-color: #f7bd1e;
 }
